@@ -74,6 +74,21 @@ body {
 
 #edit {
   position: relative;
-  height:100%;
-  width: 100%
+  top: 0;
+  left: 0;
+  height: 885px;
+  width: 985px;
+}
+
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
 }
