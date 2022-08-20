@@ -80,15 +80,30 @@ body {
   width: 985px;
 }
 
-select {
+.options {
+  text-align: center;
+}
+
+.options .options_selection {
   appearance: none;
-  background-color: transparent;
+  outline: none;
+  padding: 10px;
   border: none;
-  padding: 0 1em 0 0;
-  margin: 0;
-  width: 100%;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: inherit;
-  line-height: inherit;
+  margin: 25px 0 10px 0;
+  text-align: center;
+  -webkit-appearance: none;
+  font-family: 'Gruppo', cursive;
+  font-size: 1em;
+  color: #333;
+  font-weight: bolder;
+  width: 30%;
+  background-color: #f2f2f2;
+}
+
+.options .options_selection:focus {
+  outline: none;
+}
+
+select::-ms-expand {
+  display: none;
 }
