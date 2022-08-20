@@ -46,14 +46,15 @@ folders.forEach(folder => {
                     setText(folder, `${dir} ^`);
                     const objects = fs.readdirSync(path.join(__dirname, '..', dir));
                     objects.forEach(file => {
-                        const fileObject = document.createElement("div");
+                        const fileObj = document.createElement("div");
                         if(isDir(`${dir}/${file}`)) {
-                            fileObject.classList.add("folder");
-                            fileObject.id = file;
-                            setSpanText(fileObject, `${file} >`, file);
+                            dirs.push(file);
+                            fileObj.classList.add("folder");
+                            fileObj.id = file;
+                            setSpanText(fileObj, `${file} >`, file);
                         } else {
-                            fileObject.classList.add("file");
-                            setSpanText(fileObject, file, file);
+                            fileObj.classList.add("file");
+                            setSpanText(fileObj, file, file);
                         }
                     })
                 } else {
