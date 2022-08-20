@@ -1,0 +1,79 @@
+body {
+  font-family: Consolas, monospace, Menlo, 'Courier New';
+  background: #111;
+}
+
+#project {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background: #222;
+  overflow: hidden;
+}
+
+#files {
+  position: relative;
+  top: 20px;
+  left: 0;
+  color: #fff;
+}
+
+.file {
+  background: #111;
+  border-radius: 5px;
+  margin: 10px;
+  height: 30px;
+  position: relative;
+}
+
+.file span {
+  color: #19c416;
+  position: relative;
+  top: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.folder {
+  background: #111;
+  border-radius: 5px;
+  margin: 10px;
+  height: 30px;
+  position: relative;
+}
+
+.folder span {
+  color: #b6e61c;
+  position: relative;
+  top: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.editor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 870px;
+  resize: none;
+  background: #222;
+  color: #fff;
+  height: 100%;
+  font-family: Consolas, monospace, Menlo, 'Courier New';
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#edit {
+  position: relative;
+  height:100%;
+  width: 100%
+}
